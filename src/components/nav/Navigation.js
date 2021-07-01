@@ -20,13 +20,13 @@ class Navigation extends Component {
                         <NavLink className="navlink " exact activeClassName="current" to="/">
                             <li className="navlink link-underline">Accueil</li>
                         </NavLink>
-
-                        <NavLink className="navlink" exact activeClassName="current" to="/Projects">
-                            <li className="navlink  link-underline">Réalisations</li>
-                        </NavLink>
                         <NavLink className="navlink" exact activeClassName="current" to="/Skills">
                             <li className="navlink  link-underline">Compétences</li>
                         </NavLink>
+                        <NavLink className="navlink" exact activeClassName="current" to="/Projects">
+                            <li className="navlink  link-underline">Réalisations</li>
+                        </NavLink>
+
 
                         <a href="https://github.com/dd060606" rel="noopener noreferrer" target="_blank"><li className="external-link link-underline">GitHub</li></a>
                     </ul>

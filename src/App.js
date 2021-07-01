@@ -1,34 +1,49 @@
 import './App.css'
 import { Component } from 'react'
 import Grow from '@material-ui/core/Grow'
+import Slide from "@material-ui/core/Slide"
+import Skills from './components/Skills'
+import React from 'react'
+
 
 
 class App extends Component {
 
-  render() {
+    render() {
 
-    return (
-      <div>
+        return (
+            <div>
 
-        <div className="intro">
-          <Grow in={true} timeout={1000}>
+                <div className="intro">
+                    <Grow in={true} timeout={500}>
 
-            <div className="titles">
+                        <div className="titles">
 
-              <h2>dd06 - Développement</h2>
-              <h3>Bonjour, je suis dd_06</h3>
-              <h4>Développement Web et Logiciels </h4>
-              <a href="#skills">En savoir plus</a>
-            </div>
-          </Grow>
+                            <h2>dd06 - Développement</h2>
+                            <h3>Bienvenue sur mon site !</h3>
+                            <h4>Développement Web et Logiciels </h4>
+                            <button onClick={() => {
+                                document.querySelector('.skills').scrollIntoView({
+                                    behavior: 'smooth'
+                                })
+                            }}>En savoir plus</button>
+                        </div>
+                    </Grow>
 
-          <img src={`${process.env.PUBLIC_URL}/assets/images/developper.jpg`} alt="developper-img" />
-        </div>
+                    <Slide direction="left" in={true} mountOnEnter unmountOnExit timeout={600}>
+
+                        <img src={`${process.env.PUBLIC_URL}/assets/images/developper.jpg`} alt="developper-img" />
+                    </Slide>
+
+                </div>
+
+                <Skills className="test-skills" />
 
 
-      </div>
-    )
-  }
+
+            </div >
+        )
+    }
 
 }
 

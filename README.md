@@ -1,2 +1,4 @@
-# dd06-dev-Website
+# dd06-dev website
+
 This is the source code of my website.
+My website is built using ReactJS.

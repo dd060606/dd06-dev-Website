@@ -3,6 +3,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    height: 400px;
+
 }
 .intro h2 {
     color: #1C9DEE;
@@ -24,21 +26,25 @@
     flex-direction: column;
     margin-right: 50px;
 }
-.intro .titles a{
+.intro .titles button{
     text-decoration: none;
     color: #1C9DEE;
     background-color: white;
     border: 2px solid #1C9DEE;
     border-radius: 5px;
+    font-size: 20px;
     padding: 10px;
     transition: background 0.5s;
+    outline: none;
 }
 
-.intro .titles a:hover{
+.intro .titles button:hover{
     background-color: #EEEEEE;
     transition: background 0.5s;
     text-decoration: none;
+    cursor: pointer;
 }
+
 @media all and (max-width: 700px) {
     .intro {
         flex-direction: column;

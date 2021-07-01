@@ -8,8 +8,8 @@
     align-items: center;
     background-color: white;
     justify-content: flex-end;
+    height: 85px;
 
-    height: 75px;
     flex-direction: row;
 
 }
