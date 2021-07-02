@@ -4,7 +4,8 @@ import Slide from "react-reveal/Slide"
 import Fade from "react-reveal/Fade"
 import Skills from './components/Skills'
 import React from 'react'
-
+import LatestProjects from './components/LatestProjects'
+import Button from "@material-ui/core/Button"
 
 class App extends Component {
 
@@ -29,11 +30,11 @@ class App extends Component {
                             <h2>dd06 - Développement</h2>
                             <h3>Bienvenue sur mon site !</h3>
                             <h4>Développement Web et de logiciels </h4>
-                            <button onClick={() => {
+                            <Button onClick={() => {
                                 document.querySelector('.skills').scrollIntoView({
                                     behavior: 'smooth'
                                 })
-                            }}>En savoir plus</button>
+                            }}>En savoir plus</Button>
                         </div>
                     </Fade>
 
@@ -44,7 +45,7 @@ class App extends Component {
 
                 </div>
                 <Skills marginTop={skillsMarginTop} />
-
+                <LatestProjects />
 
 
             </div >

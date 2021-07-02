@@ -3,7 +3,6 @@ import { Component } from 'react'
 import Tooltip from '@material-ui/core/Tooltip'
 import Slide from "react-reveal/Slide"
 
-
 class Skills extends Component {
 
 

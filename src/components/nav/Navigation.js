@@ -27,7 +27,7 @@ class Navigation extends Component {
                             }, 200)
 
                         }}>Compétences</li>
-                        <NavLink className="navlink  link-underline" exact to="/res">Réalisations</NavLink>
+                        <NavLink className="navlink  link-underline" exact to="/Portfolio">Réalisations</NavLink>
 
 
                         <a href="https://github.com/dd060606" rel="noopener noreferrer" target="_blank"><li className="external-link link-underline">GitHub</li></a>

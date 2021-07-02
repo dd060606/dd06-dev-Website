@@ -7,6 +7,7 @@
     .responsive-nav-ul {
         flex-flow: column nowrap;
         background-color: #1C9DEE;
+        list-style: none;
         margin-top: 0;
         position: fixed;
         top: 0;
@@ -30,12 +31,18 @@
     z-index: 10;
 }
 .responsive-navlink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     color: white;
     margin-bottom: 15px;
     font-size: 25px;
     font-weight: 600;
 
+}
+.responsive-navlink i{
+    margin-right: 10px;
 }
 .responsive-navlink:hover {
     text-decoration: underline 2px white;

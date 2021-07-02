@@ -31,10 +31,11 @@
     text-decoration: none;
     color: #1C9DEE;
     background-color: white;
-    border: 2px solid #1C9DEE;
+    border: 1px solid #1C9DEE;
     border-radius: 5px;
     font-size: 20px;
     padding: 10px;
+    text-transform: none;
     transition: background 0.5s;
     outline: none;
 }

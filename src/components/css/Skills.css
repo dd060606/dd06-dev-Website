@@ -45,12 +45,15 @@
     border-radius: 15px;
     padding: 15px;
     margin: 50px;
-    transition: padding 0.5s;
+    transition: box-shadow 0.3s ;
 
 
 }
 .skill-box:hover {
     cursor: pointer;
+    -webkit-box-shadow: 0px 0px 9px 5px rgba(0,0,0,0.3); 
+    box-shadow: 0px 0px 9px 5px rgba(0,0,0,0.3);
+    transition: box-shadow 0.3s ;
 }
 
 .skill-box h2 {
@@ -96,4 +99,18 @@
     user-select: none;
     -webkit-user-drag: none;
 
+}
+@media all and (max-width : 865px) {
+    .skills-box {
+        flex-direction: column;
+    }
+    .skill-box {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+@media all and (max-width: 320px) {
+    .skill-box {
+        width: 240px;
+    }
 }
