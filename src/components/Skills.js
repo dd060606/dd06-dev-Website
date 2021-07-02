@@ -1,15 +1,12 @@
 import './css/Skills.css'
 import { Component } from 'react'
 import Tooltip from '@material-ui/core/Tooltip'
-import Fade from 'react-reveal/Fade'
-
-
+import Slide from "react-reveal/Slide"
 
 
 class Skills extends Component {
 
-    state = {
-    }
+
 
     render() {
         return (
@@ -21,7 +18,7 @@ class Skills extends Component {
                 </div>
 
                 <div className="skills-box">
-                    <Fade left duration={600}>
+                    <Slide left duration={600}>
                         <div className="skill-box">
                             <i className="far fa-globe" />
                             <h2> Web</h2>
@@ -79,8 +76,8 @@ class Skills extends Component {
 
                         </div>
 
-                    </Fade>
-                    <Fade right duration={600}>
+                    </Slide>
+                    <Slide right duration={600}>
 
                         <div className="skill-box">
                             <i className="far fa-laptop-code"></i>
@@ -133,7 +130,7 @@ class Skills extends Component {
 
 
                         </div>
-                    </Fade>
+                    </Slide>
 
                 </div>
 

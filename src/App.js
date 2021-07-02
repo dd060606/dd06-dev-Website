@@ -1,7 +1,7 @@
 import './App.css'
 import { Component } from 'react'
-import Grow from '@material-ui/core/Grow'
-import Slide from "@material-ui/core/Slide"
+import Slide from "react-reveal/Slide"
+import Fade from "react-reveal/Fade"
 import Skills from './components/Skills'
 import React from 'react'
 
@@ -22,7 +22,7 @@ class App extends Component {
         return (
             <div>
                 <div className="intro">
-                    <Grow in={true} timeout={500}>
+                    <Fade top cascade duration={500}>
 
                         <div className="titles">
 
@@ -35,9 +35,9 @@ class App extends Component {
                                 })
                             }}>En savoir plus</button>
                         </div>
-                    </Grow>
+                    </Fade>
 
-                    <Slide direction="left" in={true} mountOnEnter unmountOnExit timeout={600}>
+                    <Slide right duration={600}>
 
                         <img src={`${process.env.PUBLIC_URL}/assets/images/developper.jpg`} alt="developper-img" />
                     </Slide>

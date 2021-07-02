@@ -12,9 +12,9 @@ const ResponsiveButton = () => {
     return (
         <>
             <div className="responsive-btn" style={{ position: open ? "fixed" : "absolute" }} open={open} onClick={() => setOpen(!open)}>
-                <div style={{ backgroundColor: open ? '#ccc' : '#333', transform: open ? 'rotate(45deg)' : 'rotate(0)' }} />
-                <div style={{ backgroundColor: open ? '#ccc' : '#333', transform: open ? 'translateX(100%)' : 'translateX(0)', opacity: open ? 0 : 1 }} />
-                <div style={{ backgroundColor: open ? '#ccc' : '#333', transform: open ? 'rotate(-45deg)' : 'rotate(0)' }} />
+                <div style={{ transform: open ? 'rotate(45deg)' : 'rotate(0)' }} />
+                <div style={{ transform: open ? 'translateX(100%)' : 'translateX(0)', opacity: open ? 0 : 1 }} />
+                <div style={{ transform: open ? 'rotate(-45deg)' : 'rotate(0)' }} />
             </div>
             <ResponsiveNav open={open} />
         </>
