@@ -1,6 +1,6 @@
 import { Component } from "react"
 import "../css/Navigation.css"
-import { NavLink } from "react-router-dom"
+import { NavLink, withRouter } from "react-router-dom"
 import ResponsiveButton from "./ResponsiveButton"
 
 
@@ -17,15 +17,17 @@ class Navigation extends Component {
                         <img src={`${process.env.PUBLIC_URL}/assets/images/logo.png`} alt="logo" />
                     </NavLink>
                     <ul>
-                        <NavLink className="navlink " exact activeClassName="current" to="/">
-                            <li className="navlink link-underline">Accueil</li>
-                        </NavLink>
-                        <NavLink className="navlink" exact activeClassName="current" to="/Skills">
-                            <li className="navlink  link-underline">Compétences</li>
-                        </NavLink>
-                        <NavLink className="navlink" exact activeClassName="current" to="/Projects">
-                            <li className="navlink  link-underline">Réalisations</li>
-                        </NavLink>
+                        <NavLink className="navlink link-underline " exact to="/">Accueil</NavLink>
+                        <li className="navlink  link-underline" onClick={() => {
+                            this.props.history.push("/")
+                            setTimeout(() => {
+                                document.querySelector('.skills').scrollIntoView({
+                                    behavior: 'smooth'
+                                })
+                            }, 200)
+
+                        }}>Compétences</li>
+                        <NavLink className="navlink  link-underline" exact to="/res">Réalisations</NavLink>
 
 
                         <a href="https://github.com/dd060606" rel="noopener noreferrer" target="_blank"><li className="external-link link-underline">GitHub</li></a>
@@ -41,4 +43,4 @@ class Navigation extends Component {
     }
 }
 
-export default Navigation
+export default withRouter(Navigation)

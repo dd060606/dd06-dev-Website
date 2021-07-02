@@ -34,13 +34,16 @@
     font-weight: 600;
     text-decoration: none;
     color:#121212;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    font-weight: 600;
 }
 
 .navlink:hover {
     text-decoration: none;
     color:#2A2A2A;
+    cursor: pointer;
 }
 
 .link-underline {
@@ -63,10 +66,7 @@
         visibility: visible;
         width: 100%;
 }
-.current::before{
-    visibility: visible;
-    width: 100%;
-}
+
 
 a {
     text-decoration: none;

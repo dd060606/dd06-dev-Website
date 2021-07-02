@@ -6,14 +6,21 @@ import Skills from './components/Skills'
 import React from 'react'
 
 
-
 class App extends Component {
 
-    render() {
+    state = {
+        skillsMarginTop: 0
+    }
 
+    componentDidMount() {
+
+        this.setState({ skillsMarginTop: window.innerHeight - document.querySelector(".intro").offsetHeight })
+    }
+
+    render() {
+        const { skillsMarginTop } = this.state
         return (
             <div>
-
                 <div className="intro">
                     <Grow in={true} timeout={500}>
 
@@ -21,7 +28,7 @@ class App extends Component {
 
                             <h2>dd06 - Développement</h2>
                             <h3>Bienvenue sur mon site !</h3>
-                            <h4>Développement Web et Logiciels </h4>
+                            <h4>Développement Web et de logiciels </h4>
                             <button onClick={() => {
                                 document.querySelector('.skills').scrollIntoView({
                                     behavior: 'smooth'
@@ -36,8 +43,7 @@ class App extends Component {
                     </Slide>
 
                 </div>
-
-                <Skills className="test-skills" />
+                <Skills marginTop={skillsMarginTop} />
 
 
 
