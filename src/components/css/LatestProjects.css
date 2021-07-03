@@ -7,6 +7,7 @@
 }
 .latest-projects > .titles {
     display: flex;
+    width: 100%;
     margin-top: 20px;
     flex-direction: row; 
     justify-content: center;
@@ -41,17 +42,16 @@
 .latest-projects .project-card {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     margin-left: 10px;
     margin-right: 10px;
-    width: 360px;
+    width: 320px;
     -webkit-box-shadow: 0px 0px 9px 5px rgba(0,0,0,0.16); 
     box-shadow: 0px 0px 9px 5px rgba(0,0,0,0.16);
     border-radius: 5px;
     text-align: center;
     transition: box-shadow 0.3s ;
-    height: 400px;
+    height: 350px;
 
 }
 .latest-projects .project-card:hover {
@@ -62,7 +62,12 @@
 }
 
 .latest-projects .project-card > img{
-    width: 360px;
+    width: 320px;
+    transition: 0.5s all;
+}
+.latest-projects .project-card:hover > img {
+
+    filter: brightness(50%);
 
 }
 .latest-projects > button {
@@ -90,4 +95,12 @@
     text-decoration: none;
     cursor: pointer;
 }
-
+@media all and (max-width: 380px) {
+    .latest-projects .project-card {
+        width: 100%;
+        height: 320px;
+    }
+    .latest-projects .project-card > img{
+        width: 100%;
+    }
+}

@@ -1,0 +1,46 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(62,247,255);
+    width: 100%;
+    background: linear-gradient(45deg, rgba(62,247,255,1) 0%, rgba(28,157,238,1) 66%);
+}
+footer .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+footer .copyright {
+    justify-self: flex-end;
+    color: white;
+}
+footer .contact h3 {
+    color: white;
+}
+footer .contact i,footer .contact img  {
+    padding: 6px;
+    background-color: transparent;
+    border-radius: 50px;
+    border: 2px solid white;
+    font-size: 20px;
+    margin-right: 5px;
+
+    transition: background 0.5s;
+
+}
+footer .contact a {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    
+    color:white;
+    font-weight: 600;
+}
+ footer .contact i:hover,footer .contact img:hover  {
+    background-color: rgba(255,255,255, 0.3);
+    transition: background 0.5s;
+}
+

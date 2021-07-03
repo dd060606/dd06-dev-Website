@@ -6,6 +6,7 @@ import Skills from './components/Skills'
 import React from 'react'
 import LatestProjects from './components/LatestProjects'
 import Button from "@material-ui/core/Button"
+import Footer from "./components/Footer"
 
 class App extends Component {
 
@@ -47,6 +48,7 @@ class App extends Component {
                 <Skills marginTop={skillsMarginTop} />
                 <LatestProjects />
 
+                <Footer />
 
             </div >
         )
